@@ -10,6 +10,7 @@
 		8F013A622143C1A900E0E75E /* Leap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F013A582143C1A900E0E75E /* Leap.framework */; };
 		8F013A672143C1A900E0E75E /* LeapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F013A662143C1A900E0E75E /* LeapTests.swift */; };
 		8F013A692143C1A900E0E75E /* Leap.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F013A5B2143C1A900E0E75E /* Leap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F013A732143C3E200E0E75E /* Leap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F013A722143C3E200E0E75E /* Leap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		8F013A612143C1A900E0E75E /* LeapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F013A662143C1A900E0E75E /* LeapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeapTests.swift; sourceTree = "<group>"; };
 		8F013A682143C1A900E0E75E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F013A722143C3E200E0E75E /* Leap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				8F013A5B2143C1A900E0E75E /* Leap.h */,
 				8F013A5C2143C1A900E0E75E /* Info.plist */,
+				8F013A722143C3E200E0E75E /* Leap.swift */,
 			);
 			path = Leap;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					8F013A572143C1A900E0E75E = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					8F013A602143C1A900E0E75E = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F013A732143C3E200E0E75E /* Leap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +344,7 @@
 		8F013A6D2143C1A900E0E75E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "silverback-it.com.Leap";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		8F013A6E2143C1A900E0E75E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +397,7 @@
 		8F013A702143C1A900E0E75E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9HQR3Y4WE5;
 				INFOPLIST_FILE = LeapTests/Info.plist;
@@ -407,6 +416,7 @@
 		8F013A712143C1A900E0E75E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9HQR3Y4WE5;
 				INFOPLIST_FILE = LeapTests/Info.plist;

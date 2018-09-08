@@ -3,7 +3,7 @@
 //  Leap
 //
 //  Created by Christian Otkjær on 08/09/2018.
-//  Copyright © 2018 Silverback IT. All rights reserved.
+//  Copyright © 2018, Silverback IT. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
